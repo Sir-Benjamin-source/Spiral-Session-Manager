@@ -31,7 +31,6 @@ Designed to work alongside spiral-recap and other Spiral Codex tools.
 All Spiral Codex works are published with DOIs on Zenodo under Sir Benjamin (Stephen Benjamin Friend).
 
 ## License
-
 MIT + Spiral Mark
 
 ---
