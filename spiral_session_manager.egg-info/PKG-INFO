@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: spiral-session-manager
+Version: 1.0.0
+Summary: Background session and .srec coil management for the Spiral Codex
+Author: Sir Benjamin
+License: MIT
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: pyyaml>=6.0
+Dynamic: license-file

@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+spiral_session_manager/__init__.py
+spiral_session_manager/__main__.py
+spiral_session_manager/cli.py
+spiral_session_manager/config.py
+spiral_session_manager/index.py
+spiral_session_manager/manager.py
+spiral_session_manager/srec_io.py
+spiral_session_manager.egg-info/PKG-INFO
+spiral_session_manager.egg-info/SOURCES.txt
+spiral_session_manager.egg-info/dependency_links.txt
+spiral_session_manager.egg-info/entry_points.txt
+spiral_session_manager.egg-info/requires.txt
+spiral_session_manager.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+spiral-session = spiral_session_manager.cli:main
