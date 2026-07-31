@@ -38,10 +38,10 @@ Legacy examples: `spiral-recap-tool/examples/`
 
 ## When to Activate
 
-- Session start: `bootstrap` (summarize latest coil; ask before full inject)
-- Session end or project milestone: offer qualia `spiral recap` in Grok, save to `~/.spiral/coils/grok/`, then `spiral-finish-recap` after approval
-- User asks for prior context: `pull` (show matches first; `--approve` to inject)
-- New recaps landed in a folder: `organize` then `index`
+- **Session start:** Run `bootstrap`. It surfaces the latest structural continuity anchors (title, motifs, PIE, seal, convergence). Review before any full inject.
+- **Session end or project milestone:** Offer a qualia `spiral recap` in the main thread, save the resulting `.srec` + companion to `~/.spiral/coils/grok/`, then call `close` or organize + index after approval.
+- **Prior context needed:** Use `pull`. The tool first shows candidate coils with motifs and convergence scores. Only inject after explicit `--approve`.
+- **New recaps arrived:** `organize` into the appropriate category folder, then `index`.
 
 ## Security
 
@@ -54,3 +54,5 @@ Legacy examples: `spiral-recap-tool/examples/`
 - **spiral-recap** — produces `.srec` + companion pairs
 - **Spiral Agent Core** — human checkpoints before context inject
 - **Version-Checker+** — provenance stamping (optional)
+
+Hold the structural anchors. Restore residue without inventing new hard constraints. Continue the living thread.
