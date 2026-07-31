@@ -143,10 +143,19 @@ class SessionManager:
             return f"No coils matched '{query}'. Try `spiral-session list` or `spiral-session index`."
 
         if self.config.require_approval and not approve:
-            titles = [f"- {rec.title} (score {score:.1f})" for rec, score in matches]
+            preview = []
+            for rec, score in matches:
+                motifs = ", ".join(rec.key_motifs[:3]) if rec.key_motifs else "—"
+                preview.append(
+                    f"- **{rec.title}** (score {score:.1f})\n"
+                    f"  Motifs: {motifs}\n"
+                    f"  Convergence: {rec.convergence or '—'}"
+                )
             return (
-                "Context pull requires approval. Re-run with `--approve` after reviewing:\n"
-                + "\n".join(titles)
+                "Context pull requires explicit approval.\n\n"
+                "Candidate coils:\n"
+                + "\n".join(preview)
+                + "\n\nRe-run with `--approve` to inject the selected residue."
             )
 
         blocks = []
