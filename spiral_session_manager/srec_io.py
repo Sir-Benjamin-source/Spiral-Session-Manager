@@ -59,18 +59,23 @@ def bootstrap_prompt(record: dict[str, Any]) -> str:
     convergence = record.get("convergence", "")
 
     lines = [
-        f"## Continuity anchor: {title}",
+        f"## Structural Continuity Anchor",
+        f"**Title:** {title}",
         f"- Key motifs: {motifs}",
         f"- PIE vector: {pie_short}",
         f"- Poetic seal: {seal}",
-        f"- Convergence: {convergence}",
-        f"- Source: `{record.get('path', '')}`",
+        f"- Convergence: {convergence or '[open]'}",
+        f"- Source coil: `{record.get('path', '')}`",
     ]
     companion = record.get("companion_path")
     if companion:
         lines.append(f"- Companion: `{companion}`")
     lines.append("")
-    lines.append("Restore the residue. Continue with the same relational thread.")
+    lines.append(
+        "Hold the structural anchors above. "
+        "Restore relational residue without inventing new hard constraints. "
+        "Continue the living thread."
+    )
     return "\n".join(lines)
 
 
